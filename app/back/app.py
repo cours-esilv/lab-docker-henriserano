@@ -11,7 +11,10 @@ if 'CURRENT_ENVIRONMENT' not in os.environ:
     sys.exit(1)
 
 # Create logs folder
-os.mkdir('./logs')
+log_dir = os.getenv('LOG_DIR', './logs')
+
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
 
 app = Flask(__name__)
 CORS(app)
