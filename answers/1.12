@@ -1,0 +1,1 @@
+docker run -d --name mon_site_bis -p 80:80 --env WS_BACK_URL=http://localhost:5000 mon_site
