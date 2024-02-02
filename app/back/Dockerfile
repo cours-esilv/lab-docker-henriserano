@@ -9,4 +9,4 @@ COPY . .
 
 ENV CURRENT_ENVIRONMENT=production  
 
-CMD ["python","-m","", "./app.py"]
+CMD ["python","-m","flask", "run", "--host=0.0.0.0"]
