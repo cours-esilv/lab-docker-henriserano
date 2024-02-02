@@ -7,6 +7,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-ENV CURRENT_ENVIRONMENT=development
+ENV CURRENT_ENVIRONMENT=production  
 
-CMD ["python", "./app.py"]
+CMD ["python","-m","", "./app.py"]
